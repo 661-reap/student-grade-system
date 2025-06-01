@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnalysisDialog</class>
+ <widget class="QDialog" name="AnalysisDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>264</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFont font;
+font.setPointSize(10);
+tableWidget-&gt;setFont(font);
+tableWidget-&gt;horizontalHeader()-&gt;setFont(QFont(&quot;Arial&quot;, 11, QFont::Bold));
+tableWidget-&gt;horizontalHeader()-&gt;setDefaultAlignment(Qt::AlignCenter);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget::item {
+        border: 1px solid #999999;
+        padding: 4px;
+    }
+    QTableWidget {
+        gridline-color: #666666;
+        background-color: #eafcff;
+        font-size: 14px;
+    }
+    QHeaderView::section {
+        background-color: #b2ebf2;
+        border: 1px solid #666666;
+        font-weight: bold;
+    }</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

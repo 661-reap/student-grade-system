@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>466</width>
+    <height>274</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-image: url(:/images/bg_soft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff7f0;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditUsername">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #e6f7ff;
+    border: 2px solid #91d5ff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 15px;
+    color: #004b6e;
+}
+QLineEdit:focus {
+    border: 2px solid #40a9ff;
+    background-color: #ffffff;
+} </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPassword">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>140</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #e6f7ff;
+    border: 2px solid #91d5ff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 15px;
+    color: #004b6e;
+}
+QLineEdit:focus {
+    border: 2px solid #40a9ff;
+    background-color: #ffffff;
+} </string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelUsername">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Academy Engraved LET&quot;;</string>
+   </property>
+   <property name="text">
+    <string>账号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPassword">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Academy Engraved LET&quot;;</string>
+   </property>
+   <property name="text">
+    <string>密码：</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkShowPwd">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>150</y>
+     <width>86</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Academy Engraved LET&quot;;</string>
+   </property>
+   <property name="text">
+    <string>显示密码</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLogin">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>190</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">   QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+   </property>
+   <property name="text">
+    <string>登陆账号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Hiragino Sans GB&quot;;
+font: 25pt &quot;Academy Engraved LET&quot;;</string>
+   </property>
+   <property name="text">
+    <string>欢迎进入学习成绩管理系统</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelLogo">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>180</y>
+     <width>91</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/images/tomato.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>lineEditUsername</zorder>
+  <zorder>labelUsername</zorder>
+  <zorder>labelPassword</zorder>
+  <zorder>checkShowPwd</zorder>
+  <zorder>btnLogin</zorder>
+  <zorder>label</zorder>
+  <zorder>lineEditPassword</zorder>
+  <zorder>labelLogo</zorder>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

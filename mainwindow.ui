@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1027</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(220, 247, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineSearch">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>0</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #e6f7ff;
+    border: 2px solid #91d5ff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 15px;
+    color: #004b6e;
+}
+QLineEdit:focus {
+    border: 2px solid #40a9ff;
+    background-color: #ffffff;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>添加学生</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>删除学生</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSort">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>排序</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionImportCSV">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>导入成绩</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>1000</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #E8DFF7;          /* 香芋紫背景 */
+    gridline-color: #C3B1E1;            /* 淡紫色网格线 */
+    font-size: 14px;
+    color: #5B3E7F;                     /* 深紫字体 */
+    border: 1px solid #C3B1E1;          /* 紫色边框 */
+}
+
+QHeaderView::section {
+    background-color: #BFA3E0;          /* 香芋紫表头 */
+    padding: 6px;
+    border: 1px solid #9B82CC;          /* 稍深的紫色边框 */
+    font-weight: bold;
+    color: white;
+}
+
+QTableWidget::item:selected {
+    background-color: #9B82CC;          /* 选中深紫色 */
+    color: white;
+}
+
+QTableWidget::item:hover {
+    background-color: #D4C3F0;          /* 鼠标悬停浅紫色 */
+}</string>
+    </property>
+    <property name="columnCount">
+     <number>7</number>
+    </property>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="btnAnalysis">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>学科成绩分析</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExport">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>导出成绩</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>0</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbb1bd;  /* 草莓粉 */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #fda4af;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #ffa8a8;  /* 悬停颜色 */
+}
+QPushButton:pressed {
+    background-color: #ff8c94;  /* 点击颜色 */
+}</string>
+    </property>
+    <property name="text">
+     <string>查找</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1027</width>
+     <height>37</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
